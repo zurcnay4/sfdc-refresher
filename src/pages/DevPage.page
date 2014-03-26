@@ -1,0 +1,46 @@
+<!--
+/**
+ * @description     Page Sandbox
+ * @author          Bayani Cruz
+ * @date            03 Mar 2014
+ * @revision		Bayani Cruz - Dev Exercise - 26 Mar 2014
+ */
+-->
+
+<apex:page showHeader="false" sidebar="false" controller="DevController">
+
+    <apex:form >
+    	<!-- Action Status -->
+    	<apex:pageBlock title="Action Status">
+	        <apex:outputText value="Watch this counter: {!count}" id="counter" />
+	        <apex:actionStatus startText="(incrementing....)" stopText=" (done)" id="counterStatus"/>
+	        <apex:actionPoller action="{!incrementCounter}" rerender="counter" status="counterStatus" interval="5" />
+        </apex:pageBlock>
+
+        <!-- Custom Component -->
+        <apex:pageBlock title="Custom Component">
+        	<c:boxedText borderWidth="1" text="Example 1" />
+    		<c:boxedText borderWidth="20" text="Example 2" />
+        </apex:pageBlock>
+
+        <!-- Select List -->
+        <apex:pageBlock title="Select List">
+
+        	<apex:selectList value="{!letters}" multiselect="true">
+        		<apex:selectOptions value="{!Items}" />
+        	</apex:selectList>
+            <ul style="list-style-type:none">
+                <li><apex:commandButton value=">"/> <!-- Rerender on click --></li>
+                <li><apex:commandButton value="<"/></li>
+            </ul> 
+        	<apex:selectList multiselect="true"/>
+
+        	<apex:commandButton value="Up"/>
+        	<apex:commandButton value="Down"/>
+
+        </apex:pageBlock>
+    </apex:form>
+
+
+    
+</apex:page>

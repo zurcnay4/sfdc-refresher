@@ -1,0 +1,19 @@
+{
+    "username": "ayan.cruz@sfdc.dev", 
+    "environment": "developer", 
+    "project_name": "sfdc-refresher", 
+    "workspace": "/Users/ayancruz/Documents/workspace/mavensmate", 
+    "org_url": "", 
+    "namespace": "", 
+    "id": "WV2HXAKCTE08YJVTR7DLE82PA5ZEO3G1", 
+    "metadata_container": "1dc900000008zwXAAQ", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "CustomObject", 
+        "Profile", 
+        "StaticResource"
+    ]
+}
