@@ -31,4 +31,15 @@ public with sharing class DevController {
     	return options;		
     }
 
+    public List<SelectOption> getItems_R() {
+        
+    }
+
+    public PageReference addToLeft() {
+        PageReference p = Page.devpage;
+        p.setRedirect(true);
+        p.getParameters().put('selection', letters[0]);
+        return p;
+    }
+
 }

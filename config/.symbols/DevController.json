@@ -1,0 +1,119 @@
+{
+    "name": "DevController", 
+    "innerClasses": [], 
+    "variables": [
+        {
+            "references": [], 
+            "modifiers": [], 
+            "type": "LIST", 
+            "name": "options", 
+            "location": {
+                "column": 25, 
+                "line": 24
+            }
+        }, 
+        {
+            "references": [], 
+            "modifiers": [], 
+            "type": "PageReference", 
+            "name": "p", 
+            "location": {
+                "column": 23, 
+                "line": 35
+            }
+        }
+    ], 
+    "constructors": [], 
+    "namespace": null, 
+    "properties": [
+        {
+            "modifiers": [], 
+            "name": "count", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 13, 
+                "line": 9
+            }, 
+            "type": "Integer"
+        }, 
+        {
+            "modifiers": [], 
+            "name": "letters", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 21
+            }, 
+            "type": "LIST"
+        }
+    ], 
+    "tableDeclaration": {
+        "references": [], 
+        "modifiers": [], 
+        "type": "DevController", 
+        "name": "DevController", 
+        "location": {
+            "column": 27, 
+            "line": 7
+        }
+    }, 
+    "key": "01p90000004XKcb", 
+    "id": "01p90000004XKcb", 
+    "externalReferences": [], 
+    "methods": [
+        {
+            "modifiers": [], 
+            "name": "incrementCounter", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 11
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [], 
+            "name": "getCount", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 20, 
+                "line": 15
+            }, 
+            "returnType": "Integer", 
+            "type": null
+        }, 
+        {
+            "modifiers": [], 
+            "name": "getItems", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 31, 
+                "line": 23
+            }, 
+            "returnType": "LIST", 
+            "type": null
+        }, 
+        {
+            "modifiers": [], 
+            "name": "addToLeft", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 34
+            }, 
+            "returnType": "PageReference", 
+            "type": null
+        }
+    ]
+}
