@@ -9,7 +9,7 @@
             "name": "counter", 
             "location": {
                 "column": 36, 
-                "line": 36
+                "line": 38
             }
         }, 
         {
@@ -19,7 +19,7 @@
             "name": "options", 
             "location": {
                 "column": 25, 
-                "line": 50
+                "line": 46
             }
         }
     ], 
@@ -44,7 +44,7 @@
             "references": [], 
             "location": {
                 "column": 21, 
-                "line": 47
+                "line": 43
             }, 
             "type": "LIST"
         }
@@ -70,23 +70,10 @@
             "visibility": "PUBLIC", 
             "references": [], 
             "location": {
-                "column": 17, 
+                "column": 26, 
                 "line": 22
             }, 
-            "returnType": "void", 
-            "type": null
-        }, 
-        {
-            "modifiers": [], 
-            "name": "decrementCounter", 
-            "parameters": [], 
-            "visibility": "PUBLIC", 
-            "references": [], 
-            "location": {
-                "column": 17, 
-                "line": 27
-            }, 
-            "returnType": "void", 
+            "returnType": "PageReference", 
             "type": null
         }, 
         {
@@ -97,7 +84,7 @@
             "references": [], 
             "location": {
                 "column": 20, 
-                "line": 32
+                "line": 34
             }, 
             "returnType": "Integer", 
             "type": null
@@ -115,22 +102,9 @@
             "references": [], 
             "location": {
                 "column": 17, 
-                "line": 36
+                "line": 38
             }, 
             "returnType": "void", 
-            "type": null
-        }, 
-        {
-            "modifiers": [], 
-            "name": "CounterToZero", 
-            "parameters": [], 
-            "visibility": "PUBLIC", 
-            "references": [], 
-            "location": {
-                "column": 26, 
-                "line": 40
-            }, 
-            "returnType": "PageReference", 
             "type": null
         }, 
         {
@@ -141,7 +115,7 @@
             "references": [], 
             "location": {
                 "column": 31, 
-                "line": 49
+                "line": 45
             }, 
             "returnType": "LIST", 
             "type": null

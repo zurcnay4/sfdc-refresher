@@ -10,6 +10,9 @@
 <apex:page showHeader="false" sidebar="false" controller="DevController">
 
     <apex:form >
+        <apex:actionFunction name="increment" action="{!incrementCounter}" >
+             <apex:param name="ctr" value="{!Counter}" assignTo="{!Counter}" />
+        </apex:actionFunction>
         <!--script>
             //window.onload = function log() { console.log(document.getElementById('{!$Component.test}')) }
         </script-->
@@ -46,11 +49,13 @@
 
 
                                 node.options['{!Counter}'].selected = true;
+                                increment();
+                                console.log('{!Counter}');
                             }
                             
                         }
 
-                        function moveUp() {
+                      /*  function moveUp() {
 
                             
                             var node = document.getElementById('{!$Component.multi}'); //put id here
@@ -67,7 +72,7 @@
                                 node.options['{!Counter}'].selected = true;
                             }
                             
-                        }
+                        }*/
                     </script>
                 	
                     <apex:selectList id="multi" value="{!letters}" multiselect="true" style="width: 80px" >
@@ -103,8 +108,8 @@
                 </div>
 
                 <div style="position:relative; top: -140px">
-                	<apex:commandButton value="Down" action="{!incrementCounter}" onclick="moveDown()"/>
-                	<apex:commandButton value="Up" action="{!decrementCounter}" onclick="moveUp()"/>
+                	<apex:commandButton value="Down" onclick="moveDown();"/>
+                	<!--apex:commandButton value="Up" action="{!decrementCounter}" onclick="moveUp()"/-->
                 </div>
             </div>
             <c:boxedText borderWidth="20" text="Example 3" />

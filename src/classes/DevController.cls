@@ -19,15 +19,17 @@ public with sharing class DevController {
     //multiselect
     Integer counter = 0;
 
-    public void incrementCounter() {
-        counter++;
+    public PageReference incrementCounter() {
+        this.setCounter(counter + 1);
         System.debug('*dev debug* : ' + counter);
+
+        return null;
     }
 
-    public void decrementCounter() {
+    /*public void decrementCounter() {
         counter--;
         System.debug('*dev debug* : ' + counter);
-    }
+    }*/
     
     public Integer getCounter() {
         return counter;
@@ -35,12 +37,6 @@ public with sharing class DevController {
 
     public void setCounter(Integer counter) {
         this.counter = counter;
-    }
-
-    public PageReference CounterToZero() {
-        this.setCounter(0);
-        System.debug('*dev debug zero* : ' + counter);
-        return null;
     }
 
     //BAC SelectList component
