@@ -1,7 +1,17 @@
 {
     "name": "DevController", 
-    "innerClasses": [], 
+    "externalReferences": [], 
     "variables": [
+        {
+            "references": [], 
+            "modifiers": [], 
+            "type": "Integer", 
+            "name": "counter", 
+            "location": {
+                "column": 36, 
+                "line": 36
+            }
+        }, 
         {
             "references": [], 
             "modifiers": [], 
@@ -9,17 +19,7 @@
             "name": "options", 
             "location": {
                 "column": 25, 
-                "line": 24
-            }
-        }, 
-        {
-            "references": [], 
-            "modifiers": [], 
-            "type": "PageReference", 
-            "name": "p", 
-            "location": {
-                "column": 23, 
-                "line": 35
+                "line": 50
             }
         }
     ], 
@@ -28,12 +28,12 @@
     "properties": [
         {
             "modifiers": [], 
-            "name": "count", 
+            "name": "counter", 
             "visibility": "PRIVATE", 
             "references": [], 
             "location": {
                 "column": 13, 
-                "line": 9
+                "line": 20
             }, 
             "type": "Integer"
         }, 
@@ -44,7 +44,7 @@
             "references": [], 
             "location": {
                 "column": 21, 
-                "line": 21
+                "line": 47
             }, 
             "type": "LIST"
         }
@@ -59,9 +59,9 @@
             "line": 7
         }
     }, 
+    "innerClasses": [], 
     "key": "01p90000004XKcb", 
     "id": "01p90000004XKcb", 
-    "externalReferences": [], 
     "methods": [
         {
             "modifiers": [], 
@@ -71,22 +71,66 @@
             "references": [], 
             "location": {
                 "column": 17, 
-                "line": 11
+                "line": 22
             }, 
             "returnType": "void", 
             "type": null
         }, 
         {
             "modifiers": [], 
-            "name": "getCount", 
+            "name": "decrementCounter", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 27
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [], 
+            "name": "getCounter", 
             "parameters": [], 
             "visibility": "PUBLIC", 
             "references": [], 
             "location": {
                 "column": 20, 
-                "line": 15
+                "line": 32
             }, 
             "returnType": "Integer", 
+            "type": null
+        }, 
+        {
+            "modifiers": [], 
+            "name": "setCounter", 
+            "parameters": [
+                {
+                    "type": "Integer", 
+                    "name": "counter"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 36
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [], 
+            "name": "CounterToZero", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 40
+            }, 
+            "returnType": "PageReference", 
             "type": null
         }, 
         {
@@ -97,22 +141,9 @@
             "references": [], 
             "location": {
                 "column": 31, 
-                "line": 23
+                "line": 49
             }, 
             "returnType": "LIST", 
-            "type": null
-        }, 
-        {
-            "modifiers": [], 
-            "name": "addToLeft", 
-            "parameters": [], 
-            "visibility": "PUBLIC", 
-            "references": [], 
-            "location": {
-                "column": 26, 
-                "line": 34
-            }, 
-            "returnType": "PageReference", 
             "type": null
         }
     ]

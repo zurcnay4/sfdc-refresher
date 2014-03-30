@@ -10,6 +10,9 @@
 <apex:page showHeader="false" sidebar="false" controller="DevController">
 
     <apex:form >
+        <!--script>
+            //window.onload = function log() { console.log(document.getElementById('{!$Component.test}')) }
+        </script-->
     	<!-- Action Status -->
     	<!--apex:pageBlock title="Action Status">
 	        <apex:outputText value="Watch this counter: {!count}" id="counter" />
@@ -18,18 +21,74 @@
         </apex:pageBlock-->
 
         <!-- Custom Component -->
-        <apex:pageBlock title="Custom Component">
+        <apex:pageBlock title="Custom Component" id="test">
         	<c:boxedText borderWidth="1" text="Example 1" />
     		<c:boxedText borderWidth="20" text="Example 2" />
         </apex:pageBlock>
+        
 
         <!-- Select List -->
         <apex:pageBlock title="Select List">
             <div style="width: 300px; height: 100px">
                 <div>
-                	<apex:selectList value="{!letters}" multiselect="true" style="width: 80px">
-                		<apex:selectOptions value="{!Items}" />
+                    <script>
+                        function moveDown() {
+
+                            
+                            var node = document.getElementById('{!$Component.multi}'); //put id here
+                            if('{!Counter}' < node.options.length) {
+
+                                for(i=0;i<node.options.length;i++) {
+                                    if(node.options[i].selected === true ) {
+                                        node.options[i].selected = false;
+                                    }
+                                }
+
+
+                                node.options['{!Counter}'].selected = true;
+                            }
+                            
+                        }
+
+                        function moveUp() {
+
+                            
+                            var node = document.getElementById('{!$Component.multi}'); //put id here
+                            console.log('Counter ? : {!Counter}');
+                            if('{!Counter}' >= 0) {
+                                console.log('Counter > 0 ? : {!Counter}');
+                                
+                                for(i=0;i<node.options.length;i++) {
+                                    if(node.options[i].selected === true ) {
+                                        node.options[i].selected = false;
+                                    }
+                                }
+
+                                node.options['{!Counter}'].selected = true;
+                            }
+                            
+                        }
+                    </script>
+                	
+                    <apex:selectList id="multi" value="{!letters}" multiselect="true" style="width: 80px" >
+                		<apex:selectOptions value="{!Items}"/>
                 	</apex:selectList>
+                    
+                    <!--script>
+                    var selectNode = document.getElementById('{!$Component.multi}');
+                    
+                    selectNode.focus();
+                    
+                    console.log('Starting loop...');
+                    console.log('Size of multi : ' + selectNode.options.length);
+                    
+                    for (i =0; i < selectNode.options.length; i++) {
+                        console.log('loop is at : ' + i);
+                        if (i != 3) {
+                            selectNode.options[i].selected = true;
+                        }                        
+                    }
+                    </script-->
                 </div>
 
                 <div style="position:relative; top: -70px; left: 30px; width:100px">
@@ -44,8 +103,8 @@
                 </div>
 
                 <div style="position:relative; top: -140px">
-                	<apex:commandButton value="Up" action="{!addToLeft}"/>
-                	<apex:commandButton value="Down"/>
+                	<apex:commandButton value="Down" action="{!incrementCounter}" onclick="moveDown()"/>
+                	<apex:commandButton value="Up" action="{!decrementCounter}" onclick="moveUp()"/>
                 </div>
             </div>
             <c:boxedText borderWidth="20" text="Example 3" />

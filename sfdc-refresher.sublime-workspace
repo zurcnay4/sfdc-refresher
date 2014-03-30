@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"set",
+				"PUBLIC setRedirect(Boolean redirect) 	System.PageReference"
+			],
+			[
 				"selectOp",
 				"apex:selectOptions"
 			],
@@ -32,10 +36,6 @@
 				"jsonOrders"
 			],
 			[
-				"set",
-				"PUBLIC setMethod(String method) 	void"
-			],
-			[
 				"invoice",
 				"invoiceId"
 			],
@@ -51,7 +51,7 @@
 			"file": "src/pages/DevPage.page",
 			"settings":
 			{
-				"buffer_size": 1500,
+				"buffer_size": 2210,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,17 +59,33 @@
 			"file": "src/classes/DevController.cls",
 			"settings":
 			{
-				"buffer_size": 821,
+				"buffer_size": 1071,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ayancruz/Documents/jpi-sfdc-src/_PMS Salesforce/RCA/RCAExt.txt",
+			"settings":
+			{
+				"buffer_size": 52864,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 87.0,
+		"height": 167.0,
 		"selected_items":
 		[
+			[
+				"jav",
+				"Set Syntax: Java"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
 			[
 				"new pro",
 				"MavensMate: New Project..."
@@ -81,10 +97,6 @@
 			[
 				"open",
 				"MavensMate: Open Project..."
-			],
-			[
-				"java",
-				"Set Syntax: JavaScript"
 			],
 			[
 				"j",
@@ -139,7 +151,7 @@
 				"MavensMate: Run Apex Tests"
 			]
 		],
-		"width": 575.0
+		"width": 539.0
 	},
 	"console":
 	{
@@ -159,6 +171,7 @@
 	},
 	"file_history":
 	[
+		"/Users/ayancruz/Desktop/jpi-sfdc-src/_PMS Salesforce/RCA/RCAExt.txt",
 		"/Users/ayancruz/Documents/workspace/mavensmate/MyDevOrg/src/classes/DevController.cls",
 		"/Users/ayancruz/Documents/workspace/mavensmate/MyDevOrg/src/pages/DevPage.page",
 		"/Users/ayancruz/Documents/workspace/mavensmate/MyDevOrg/src/classes/RCA_Ext.cls",
@@ -190,7 +203,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -207,6 +220,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"html",
+			"put",
 			"create",
 			"float",
 			"center",
@@ -242,7 +257,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -251,15 +266,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1500,
+						"buffer_size": 2210,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1301,
-								1301
+								1567,
+								1567
 							]
 						],
 						"settings":
@@ -269,10 +284,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 101.0,
+						"translation.y": 326.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -281,15 +296,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 821,
+						"buffer_size": 1071,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								192,
-								192
+								390,
+								390
 							]
 						],
 						"settings":
@@ -299,6 +314,36 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 106.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/ayancruz/Documents/jpi-sfdc-src/_PMS Salesforce/RCA/RCAExt.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 52864,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								944,
+								944
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 24.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -383,7 +428,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 207.0,
 	"status_bar_visible": true,
 	"template_settings":

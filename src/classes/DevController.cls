@@ -6,7 +6,7 @@
 
 public with sharing class DevController {
 	//BAC ActionStatus Mar 3 2014
-    Integer count = 0;
+   /* Integer count = 0;
 
     public void incrementCounter() {
         count++;
@@ -14,8 +14,34 @@ public with sharing class DevController {
     
     public Integer getCount() {
         return count;
-    }
+    } */
     //END
+    //multiselect
+    Integer counter = 0;
+
+    public void incrementCounter() {
+        counter++;
+        System.debug('*dev debug* : ' + counter);
+    }
+
+    public void decrementCounter() {
+        counter--;
+        System.debug('*dev debug* : ' + counter);
+    }
+    
+    public Integer getCounter() {
+        return counter;
+    }
+
+    public void setCounter(Integer counter) {
+        this.counter = counter;
+    }
+
+    public PageReference CounterToZero() {
+        this.setCounter(0);
+        System.debug('*dev debug zero* : ' + counter);
+        return null;
+    }
 
     //BAC SelectList component
     public String[] letters { get; set;}
@@ -29,17 +55,6 @@ public with sharing class DevController {
     	options.add(new SelectOption('E', 'E'));	
 
     	return options;		
-    }
-
-    public List<SelectOption> getItems_R() {
-        
-    }
-
-    public PageReference addToLeft() {
-        PageReference p = Page.devpage;
-        p.setRedirect(true);
-        p.getParameters().put('selection', letters[0]);
-        return p;
     }
 
 }
